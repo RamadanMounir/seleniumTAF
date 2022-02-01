@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopcommerce Regrission Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="tests.EmailFriendTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="stopDriver"/>
+          <include name="RegisteredUserCanLogout"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.UserRegisteration">
+        <methods>
+          <include name="RegisteredUserCanLogout2"/>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="RegisteredUserCanLogin"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="RegisteredUserCanLogout"/>
+        </methods>
+      </class> <!-- tests.UserRegisteration -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcommerce Regrission Suite] -->
