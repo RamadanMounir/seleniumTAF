@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite  name="nopcommerce Regrission Suite">
+<parameter name="browser" value="chrome"></parameter>
+  <test name="Regression Test" preserve-order="true" >
+    <classes>
+	    <class name="tests.UserRegisterationWithDDTAndJavaFaker"/>
+ 	    <class name="tests.ProductHoverMenuTest"/>
+	    <class name="tests.SearchProdutUsingAutoSuggistion"/> 	  
+    </classes>
+  </test> 
+</suite> 
