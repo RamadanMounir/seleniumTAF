@@ -7,7 +7,12 @@ import java.util.Properties;
 
 public class LoadProperties {
 
-	public static Properties userData=loadData(System.getProperty("user.dir")+"\\src\\main\\java\\properties\\userdata.properties");
+	public static Properties userData=
+			loadData(System.getProperty("user.dir")+"\\src\\main\\java\\properties\\userdata.properties");
+	
+	// load souceslabs Data
+	public static Properties soucelabsData=
+			loadData(System.getProperty("user.dir")+"\\src\\main\\java\\properties\\soucelabceUser.properties");
 
 	private static Properties loadData(String path)
 	{
