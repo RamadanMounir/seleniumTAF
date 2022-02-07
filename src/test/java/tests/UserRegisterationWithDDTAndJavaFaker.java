@@ -13,12 +13,12 @@ public class UserRegisterationWithDDTAndJavaFaker extends TestBase {
 	HomePage homeObject;
 	UserRegisterationPage registerObject;
 	LoginPage loginObject;
-Faker fakeData =new Faker();
-String firstname =fakeData.name().firstName();
-String lastname=fakeData.name().lastName();
-String email=fakeData.internet().emailAddress();
-String password=fakeData.number().digits(9).toString();
-	
+	Faker fakeData =new Faker();
+	String firstname =fakeData.name().firstName();
+	String lastname=fakeData.name().lastName();
+	String email=fakeData.internet().emailAddress();
+	String password=fakeData.number().digits(9).toString();
+
 
 	@Test
 	public void UserCanRegisterSuccessfully( ) 
