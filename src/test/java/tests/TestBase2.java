@@ -12,10 +12,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
+import data.LoadProperties;
 import utilities.Helper;
 
 public class TestBase2 {
+	
+	
+	//souceLabs configuration
+	public static final String souceURL=LoadProperties.soucelabsData.getProperty("SeleniumURL");
 	public static String BaseURL = "https://demo.nopcommerce.com/";
 
 	protected ThreadLocal<RemoteWebDriver> driver=null;
@@ -27,7 +31,13 @@ public class TestBase2 {
 		driver = new ThreadLocal<>();
 		DesiredCapabilities caps =new DesiredCapabilities();
 		caps.setCapability("browserName", browser);
-		driver.set(new RemoteWebDriver(new URL("http://localhost:4444"), caps));
+		//Run on selenium Grid 4
+		//driver.set(new RemoteWebDriver(new URL("http://localhost:4444"), caps));
+		
+		//Run On SouceLabse
+		
+		driver.set(new RemoteWebDriver(new URL(souceURL), caps));
+		
 		getDriver().navigate().to(BaseURL);
 		
 	}
