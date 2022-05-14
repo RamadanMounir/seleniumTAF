@@ -20,6 +20,7 @@
   
 
   	 <dependencies>
+  	 
   
 
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
@@ -76,6 +77,13 @@
 			     <artifactId>selenium-java</artifactId>
 			     <version>4.1.1</version>
 		   </dependency>
+		   <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		  <dependency>
@@ -195,5 +203,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  </build>
+     <plugins>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-compiler-plugin</artifactId>
+             <configuration>
+                 <source>8</source>
+                 <target>8</target>
+             </configuration>
+         </plugin>
+     </plugins>
+ </build>
 </project>

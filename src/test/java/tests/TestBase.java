@@ -1,6 +1,6 @@
 package tests;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,25 +14,31 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Helper;
 
+import java.time.Duration;
+
 public class TestBase extends AbstractTestNGCucumberTests{
+	private String URL="https://demo.nopcommerce.com/";
 	public static WebDriver driver;
 
 	@BeforeSuite
 	@Parameters({"browser"})
-	public void startDriver(@Optional("chrome-headless") String browserName)
+	public void startDriver(@Optional("chrome") String browserName)
 	{
 
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+			 WebDriverManager.chromedriver().setup();
+			
 			driver=new ChromeDriver();
 		}
 
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
+			
 			driver=new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("chrome-headless"))
@@ -50,7 +56,7 @@ public class TestBase extends AbstractTestNGCucumberTests{
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.navigate().to("https://demo.nopcommerce.com/");
+		driver.navigate().to(URL);
 
 	}
 

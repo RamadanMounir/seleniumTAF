@@ -1,16 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="12" total="28" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-01T02:58:57 EET" name="Default suite" finished-at="2022-02-01T02:59:09 EET" duration-ms="12461">
+  <suite started-at="2022-05-11T16:22:13 EET" name="nopcommerce Regrission Suite" finished-at="2022-05-11T16:22:47 EET" duration-ms="34189">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6c6c5427]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ContactUsTest@11eadcba]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.EmailFriendTest@37bd68c3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.MyAccountTest@60f7cc1d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ProductHoverMenuTest@242aa8d9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.SearchProductTest@4721d212]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.SearchProdutUsingAutoSuggistion@5b11a194]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.UserRegisteration@64dafeed]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-01T02:58:57 EET" name="Default test" finished-at="2022-02-01T02:59:09 EET" duration-ms="12461">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:58:52 EET" name="startDriver" finished-at="2022-02-01T02:58:57 EET" duration-ms="4815" status="PASS">
+    <test started-at="2022-05-11T16:22:13 EET" name="Regression Test" finished-at="2022-05-11T16:22:47 EET" duration-ms="34189">
+      <class name="tests.EmailFriendTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:24 EET" name="setUpClass" finished-at="2022-05-11T16:22:24 EET" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="UserCanRegisterSuccessfully()[pri:1, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:24 EET" name="UserCanRegisterSuccessfully" finished-at="2022-05-11T16:22:26 EET" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRegisterSuccessfully -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:26 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:26 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=EmailFriendTest.UserCanRegisterSuccessfully()[pri:1, instance:tests.EmailFriendTest@37bd68c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="autocomplete()[pri:2, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:26 EET" name="autocomplete" finished-at="2022-05-11T16:22:29 EET" duration-ms="2106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autocomplete -->
+        <test-method signature="RegisteredUserCanSendEmailToFriend()[pri:3, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:29 EET" name="RegisteredUserCanSendEmailToFriend" finished-at="2022-05-11T16:22:30 EET" duration-ms="1825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanSendEmailToFriend -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:29 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:29 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=autocomplete status=SUCCESS method=EmailFriendTest.autocomplete()[pri:2, instance:tests.EmailFriendTest@37bd68c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:30 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:30 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanSendEmailToFriend status=SUCCESS method=EmailFriendTest.RegisteredUserCanSendEmailToFriend()[pri:3, instance:tests.EmailFriendTest@37bd68c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="RegisteredUserCanLogout()[pri:4, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:30 EET" name="RegisteredUserCanLogout" finished-at="2022-05-11T16:22:32 EET" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogout -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:32 EET" name="tearDownClass" finished-at="2022-05-11T16:22:32 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.EmailFriendTest@37bd68c3]" started-at="2022-05-11T16:22:32 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:32 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=EmailFriendTest.RegisteredUserCanLogout()[pri:4, instance:tests.EmailFriendTest@37bd68c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.UserRegisteration">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:05 EET" name="startDriver" finished-at="2022-05-11T16:22:13 EET" duration-ms="7340" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,80 +104,291 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:58:57 EET" name="setUpClass" finished-at="2022-02-01T02:58:58 EET" duration-ms="572" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:13 EET" name="setUpClass" finished-at="2022-05-11T16:22:13 EET" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5e50df2e]]>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:58:58 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-01T02:59:04 EET" duration-ms="6173" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registeration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[User Registeration]"]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="UserCanRegisterSuccessfully()[pri:1, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:13 EET" name="UserCanRegisterSuccessfully" finished-at="2022-05-11T16:22:16 EET" duration-ms="2834" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:59:04 EET" name="screenshotOnFailure" finished-at="2022-02-01T02:59:04 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- UserCanRegisterSuccessfully -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:16 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:16 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6c6c5427] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=UserRegisteration.UserCanRegisterSuccessfully()[pri:1, instance:tests.UserRegisteration@64dafeed] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:59:04 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-01T02:59:09 EET" duration-ms="5610" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registeration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[User Registeration]"]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="RegisteredUserCanLogout()[pri:2, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:16 EET" name="RegisteredUserCanLogout" finished-at="2022-05-11T16:22:17 EET" duration-ms="1019" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:59:09 EET" name="screenshotOnFailure" finished-at="2022-02-01T02:59:09 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- RegisteredUserCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:17 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:17 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6c6c5427] output={null}]]]>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=UserRegisteration.RegisteredUserCanLogout()[pri:2, instance:tests.UserRegisteration@64dafeed] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:59:09 EET" name="tearDownClass" finished-at="2022-02-01T02:59:09 EET" duration-ms="52" status="PASS">
+        <test-method signature="RegisteredUserCanLogin()[pri:3, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:17 EET" name="RegisteredUserCanLogin" finished-at="2022-05-11T16:22:19 EET" duration-ms="2119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:19 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:19 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogin status=SUCCESS method=UserRegisteration.RegisteredUserCanLogin()[pri:3, instance:tests.UserRegisteration@64dafeed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="RegisteredUserCanLogout2()[pri:4, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:19 EET" name="RegisteredUserCanLogout2" finished-at="2022-05-11T16:22:20 EET" duration-ms="1015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogout2 -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:20 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:20 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout2 status=SUCCESS method=UserRegisteration.RegisteredUserCanLogout2()[pri:4, instance:tests.UserRegisteration@64dafeed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:20 EET" name="tearDownClass" finished-at="2022-05-11T16:22:20 EET" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:runner.TestRunner@6c6c5427]" started-at="2022-02-01T02:59:09 EET" name="stopDriver" finished-at="2022-02-01T02:59:10 EET" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.UserRegisteration@64dafeed]" started-at="2022-05-11T16:22:47 EET" name="stopDriver" finished-at="2022-05-11T16:22:47 EET" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.UserRegisteration -->
+      <class name="tests.MyAccountTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:32 EET" name="setUpClass" finished-at="2022-05-11T16:22:32 EET" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="UserCanRegisterSuccessfully()[pri:1, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:32 EET" name="UserCanRegisterSuccessfully" finished-at="2022-05-11T16:22:35 EET" duration-ms="2134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRegisterSuccessfully -->
+        <test-method signature="RegisteredUserCanChangePassword()[pri:2, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:35 EET" name="RegisteredUserCanChangePassword" finished-at="2022-05-11T16:22:39 EET" duration-ms="4835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanChangePassword -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:35 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:35 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=MyAccountTest.UserCanRegisterSuccessfully()[pri:1, instance:tests.MyAccountTest@60f7cc1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:39 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:39 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanChangePassword status=SUCCESS method=MyAccountTest.RegisteredUserCanChangePassword()[pri:2, instance:tests.MyAccountTest@60f7cc1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="RegisteredUserCanLogout()[pri:3, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:39 EET" name="RegisteredUserCanLogout" finished-at="2022-05-11T16:22:40 EET" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:40 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:40 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=MyAccountTest.RegisteredUserCanLogout()[pri:3, instance:tests.MyAccountTest@60f7cc1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="RegisteredUserCanLogin()[pri:4, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:40 EET" name="RegisteredUserCanLogin" finished-at="2022-05-11T16:22:42 EET" duration-ms="1795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:42 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:42 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogin status=SUCCESS method=MyAccountTest.RegisteredUserCanLogin()[pri:4, instance:tests.MyAccountTest@60f7cc1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.MyAccountTest@60f7cc1d]" started-at="2022-05-11T16:22:42 EET" name="tearDownClass" finished-at="2022-05-11T16:22:42 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.MyAccountTest -->
+      <class name="tests.SearchProdutUsingAutoSuggistion">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.SearchProdutUsingAutoSuggistion@5b11a194]" started-at="2022-05-11T16:22:21 EET" name="setUpClass" finished-at="2022-05-11T16:22:21 EET" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="autocomplete()[pri:0, instance:tests.SearchProdutUsingAutoSuggistion@5b11a194]" started-at="2022-05-11T16:22:21 EET" name="autocomplete" finished-at="2022-05-11T16:22:24 EET" duration-ms="3017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autocomplete -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProdutUsingAutoSuggistion@5b11a194]" started-at="2022-05-11T16:22:24 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:24 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=autocomplete status=SUCCESS method=SearchProdutUsingAutoSuggistion.autocomplete()[pri:0, instance:tests.SearchProdutUsingAutoSuggistion@5b11a194] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.SearchProdutUsingAutoSuggistion@5b11a194]" started-at="2022-05-11T16:22:24 EET" name="tearDownClass" finished-at="2022-05-11T16:22:24 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.SearchProdutUsingAutoSuggistion -->
+      <class name="tests.SearchProductTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.SearchProductTest@4721d212]" started-at="2022-05-11T16:22:45 EET" name="setUpClass" finished-at="2022-05-11T16:22:45 EET" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="UserCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@4721d212]" started-at="2022-05-11T16:22:45 EET" name="UserCanSearchForProducts" finished-at="2022-05-11T16:22:47 EET" duration-ms="2071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProducts -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@4721d212]" started-at="2022-05-11T16:22:47 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:47 EET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSearchForProducts status=SUCCESS method=SearchProductTest.UserCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@4721d212] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.SearchProductTest@4721d212]" started-at="2022-05-11T16:22:47 EET" name="tearDownClass" finished-at="2022-05-11T16:22:47 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ProductHoverMenuTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.ProductHoverMenuTest@242aa8d9]" started-at="2022-05-11T16:22:20 EET" name="setUpClass" finished-at="2022-05-11T16:22:20 EET" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@242aa8d9]" started-at="2022-05-11T16:22:20 EET" name="UserCanSelectSubCategoryFromMainMenu" finished-at="2022-05-11T16:22:21 EET" duration-ms="1455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSelectSubCategoryFromMainMenu -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ProductHoverMenuTest@242aa8d9]" started-at="2022-05-11T16:22:21 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:21 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSelectSubCategoryFromMainMenu status=SUCCESS method=ProductHoverMenuTest.UserCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@242aa8d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.ProductHoverMenuTest@242aa8d9]" started-at="2022-05-11T16:22:21 EET" name="tearDownClass" finished-at="2022-05-11T16:22:21 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.ProductHoverMenuTest -->
+      <class name="tests.ContactUsTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.ContactUsTest@11eadcba]" started-at="2022-05-11T16:22:42 EET" name="setUpClass" finished-at="2022-05-11T16:22:42 EET" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bdab835]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="contactUs()[pri:0, instance:tests.ContactUsTest@11eadcba]" started-at="2022-05-11T16:22:42 EET" name="contactUs" finished-at="2022-05-11T16:22:45 EET" duration-ms="2359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@11eadcba]" started-at="2022-05-11T16:22:45 EET" name="screenshotOnFailure" finished-at="2022-05-11T16:22:45 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contactUs status=SUCCESS method=ContactUsTest.contactUs()[pri:0, instance:tests.ContactUsTest@11eadcba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.ContactUsTest@11eadcba]" started-at="2022-05-11T16:22:45 EET" name="tearDownClass" finished-at="2022-05-11T16:22:45 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.ContactUsTest -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- nopcommerce Regrission Suite -->
 </testng-results>

@@ -4,19 +4,12 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Regression Test(failed)">
     <classes>
-      <class name="tests.EmailFriendTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="UserCanRegisterSuccessfully"/>
-          <include name="stopDriver"/>
-          <include name="RegisteredUserCanLogout"/>
-          <include name="screenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.EmailFriendTest -->
       <class name="tests.UserRegisteration">
         <methods>
-          <include name="RegisteredUserCanLogout2"/>
+          <include name="setUpClass"/>
           <include name="startDriver"/>
+          <include name="RegisteredUserCanLogout2"/>
+          <include name="tearDownClass"/>
           <include name="stopDriver"/>
           <include name="RegisteredUserCanLogin"/>
           <include name="screenshotOnFailure"/>
@@ -24,6 +17,72 @@
           <include name="RegisteredUserCanLogout"/>
         </methods>
       </class> <!-- tests.UserRegisteration -->
+      <class name="tests.MyAccountTest">
+        <methods>
+          <include name="RegisteredUserCanLogout"/>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="RegisteredUserCanChangePassword"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="RegisteredUserCanLogin"/>
+        </methods>
+      </class> <!-- tests.MyAccountTest -->
+      <class name="tests.ProductHoverMenuTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="tearDownClass"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSelectSubCategoryFromMainMenu"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.ProductHoverMenuTest -->
+      <class name="tests.SearchProdutUsingAutoSuggistion">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="autocomplete"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.SearchProdutUsingAutoSuggistion -->
+      <class name="tests.EmailFriendTest">
+        <methods>
+          <include name="RegisteredUserCanSendEmailToFriend"/>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="autocomplete"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="tearDownClass"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="RegisteredUserCanLogout"/>
+        </methods>
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="tearDownClass"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanSearchForProducts"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="startDriver"/>
+          <include name="tearDownClass"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="contactUs"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
     </classes>
   </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [nopcommerce Regrission Suite] -->
