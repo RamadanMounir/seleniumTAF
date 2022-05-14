@@ -1,9 +1,20 @@
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\SearchProdutUsingAutoSuggistion.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\MyAccountTest.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\ProductHoverMenuTest.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\utilities\Helper.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\ContactUsTest.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\UserRegisteration.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\EmailFriendTest.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\SearchProductTest.java
-D:\1 Romio\_data\Q\Automation\Ramadan's projects\taf\src\test\java\tests\TestBase.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\SearchProductTest.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\runner\TestRunner.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisterationWithDDTAndDataprovider.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\SearchProdutUsingAutoSuggistion.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisterationWithDDTAndCSV.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisterationWithDDTAndPropertiesFile.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisterationWithDDTAndJavaFaker.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\steps\UserRegisteration.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\EmailFriendTest.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisterationWithDDTAndJson.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisteration.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\TestBase.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\utilities\Helper.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\MyAccountTest.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\data\ExcelReader.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\UserRegisterationWithDDTAndExcel.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\data\LoadProperties.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\ProductHoverMenuTest.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\data\JsonDataReader.java
+C:\Users\romio\Downloads\testdemoTAF\seleniumTAF\src\test\java\tests\ContactUsTest.java

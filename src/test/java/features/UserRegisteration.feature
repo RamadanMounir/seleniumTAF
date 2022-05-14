@@ -8,6 +8,6 @@ Feature: User Registeration
 				Then the Registeration page displayed successfully
 				
 		Examples:
-				| firstname | lastname |        email     | password  |
-				| ali     | alaa   | suuuuuue@Test.com | 123456789 |
-				| alaa    | ali  | yessssss@Test.com | 123456789 |
+				| firstname | lastname  |        email      | password  |
+				| ali     	| alaa   		| suuuuuue@Test.com | 123456789 |
+				| alaa    	| ali 		  | yessssss@Test.com | 123456789 |

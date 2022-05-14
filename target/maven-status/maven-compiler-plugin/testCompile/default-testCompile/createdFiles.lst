@@ -1,9 +1,9 @@
+tests\SearchProdutUsingAutoSuggistion.class
+tests\ProductHoverMenuTest.class
 tests\UserRegisteration.class
 tests\MyAccountTest.class
 utilities\Helper.class
 tests\EmailFriendTest.class
 tests\ContactUsTest.class
-tests\SearchProdutUsingAutoSuggistion.class
-tests\ProductHoverMenuTest.class
 tests\SearchProductTest.class
 tests\TestBase.class
